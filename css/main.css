@@ -1,0 +1,225 @@
+/* line 3, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/_menu.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/_menu.scss */
+.menu-linux, .menu-linux-two {
+  background-color: #e95420;
+  overflow: hidden;
+}
+
+/* line 12, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/_menu.scss */
+.menu-linux a, .menu-linux-two a {
+  display: inline-block;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 14px 2%;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 300;
+  position: relative;
+}
+
+/* line 24, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/_menu.scss */
+.menu-linux a:hover, .menu-linux-two a:hover {
+  color: white;
+  z-index: 1;
+}
+
+/* line 29, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/_menu.scss */
+.menu-linux img, .menu-linux-two img {
+  width: 64px;
+  float: right;
+}
+
+/* line 34, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/_menu.scss */
+.menu-linux a:after, .menu-linux-two a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: white;
+  height: 1px;
+}
+
+/* line 47, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/_menu.scss */
+.menu-linux a:hover:after, .menu-linux-two a:hover:after {
+  width: 100%;
+  margin-bottom: 10px;
+  transition: ease-in 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 57, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/_menu.scss */
+  .menu-linux a {
+    display: none;
+  }
+  /* line 61, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/_menu.scss */
+  .menu-linux img {
+    width: 44px;
+    float: right;
+  }
+  /* line 68, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/_menu.scss */
+  .logo-2 {
+    display: none;
+  }
+  /* line 72, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/_menu.scss */
+  .menu-linux-two {
+    background-color: white;
+  }
+  /* line 76, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/_menu.scss */
+  .menu-linux-two a {
+    font-size: 10px;
+    color: #0d0d0d;
+    padding: 14px;
+    margin-left: 12px;
+  }
+  /* line 83, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/_menu.scss */
+  .menu-linux-two a:hover {
+    color: #0d0d0d;
+  }
+  /* line 87, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/_menu.scss */
+  .menu-linux-two a:after {
+    background: #0d0d0d;
+  }
+}
+
+/* line 6, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/main.scss */
+html {
+  scroll-behavior: smooth;
+}
+
+/* line 10, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/main.scss */
+body {
+  background-image: url(../img/light-pattern.png);
+  background-repeat: repeat;
+  color: #0d0d0d;
+}
+
+/* line 11, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/_mixin.scss */
+body p {
+  color: #6c6c6c;
+}
+
+/* line 15, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/_mixin.scss */
+body img {
+  width: 100%;
+}
+
+/* line 14, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/main.scss */
+.konference {
+  padding-top: 20px;
+}
+
+/* line 20, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/main.scss */
+.konference .konference-img img {
+  width: 100%;
+}
+
+/* line 25, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/main.scss */
+.konference .konference-tekst {
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* line 31, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/main.scss */
+.til-icon {
+  width: 80px;
+}
+
+/* line 34, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/main.scss */
+.img-news {
+  width: 150px;
+}
+
+/* line 38, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/main.scss */
+.icon-desktop img {
+  width: 30%;
+}
+
+/* line 42, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/main.scss */
+.img-news-mob {
+  width: 200px;
+}
+
+/* line 45, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/main.scss */
+.icon-center {
+  font-size: 60px;
+  color: #6c6c6c;
+}
+
+/*.text-center-me {
+    color: #6c6c6c;
+}*/
+/* line 52, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/main.scss */
+.footer-my {
+  background-color: #0d0d0d;
+  color: #6c6c6c;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* line 57, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/main.scss */
+.modal-footer-color {
+  background-color: #aea79f;
+  padding-right: 10px;
+}
+
+/* line 61, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/main.scss */
+.news {
+  font-size: 13px;
+}
+
+/* line 64, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/main.scss */
+.news1 {
+  opacity: 0.5;
+}
+
+/* line 69, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/main.scss */
+#myBtn {
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #e95420;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 5px;
+  /* Rounded corners */
+  font-size: 12px;
+  /* Increase font size */
+}
+
+/* line 85, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/main.scss */
+#myBtn:hover {
+  background-color: #772953;
+  /* Add a dark-grey background on hover */
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 92, C:/Users/Zoheir Hassani/Desktop/Ubuntu Konference/sass/main.scss */
+  .img-news-mob {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=../css/main.map */

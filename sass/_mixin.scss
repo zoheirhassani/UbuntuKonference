@@ -1,0 +1,62 @@
+﻿@import "_variable";
+
+
+@mixin background($lightpatterns, $blackpatterns) {
+
+    @if $lightpatterns {
+        background-image: url(../img/light-pattern.png);
+        background-repeat: repeat;
+        color: $color_gray-hard;
+
+        p {
+            color: $color-fonts-whiteback;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+    @else if $blackpatterns {
+        background-image: url(../img/black_pattern.png);
+        background-repeat: repeat;
+        color: $color_gray-hard;
+
+        .p-class-one {
+            color: $color_gray-hard !important;
+        }
+
+        p {
+            color: $color-fonts-whitewhite;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .footer-my {
+            background-color: $color_orange;
+            color: $color-fonts-whitewhite;
+            font-family: $font_ubunto;
+        }
+
+        .icon-center {
+            color: $color-fonts-whitewhite;
+        }
+
+        .tilmelding {
+            color: $color-fonts-whitewhite !important;
+        }
+    }
+    @else {
+        color: $color_gray-hard;
+        background-color: white;
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            color: $color-fonts-whiteback;
+        }
+    }
+}
